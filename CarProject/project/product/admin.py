@@ -3,4 +3,5 @@ from .models import *
 
 admin.site.register(Car)
 admin.site.register(Bet)
+admin.site.register(UserProfile)
 

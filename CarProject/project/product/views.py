@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .models import *
-from .serializers import *
+from .serializers import CarSerializer,BetSerializer,UserProfileSerializer
 
 
 class CarViewSets(viewsets.ModelViewSet):
@@ -40,3 +40,8 @@ class CarViewSets(viewsets.ModelViewSet):
 class BetViewSets(viewsets.ModelViewSet):
     queryset = Bet.objects.all()
     serializer_class = BetSerializer
+
+
+class UserProfileSets(viewsets.ModelViewSet):
+    queryset = Bet.objects.all()
+    serializer_class = UserProfileSerializer

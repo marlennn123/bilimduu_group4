@@ -10,3 +10,8 @@ class BetSerializer(serializers.ModelSerializer):
         model = Bet
         fields = ('__all__')
 
+class UserProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = ('__all__')
+
